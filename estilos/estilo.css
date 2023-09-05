@@ -1,0 +1,14 @@
+#transformacoes{
+    font-size: 30px;
+    text-align: center;
+}
+#geometry{
+    width: 220px;
+}
+#btn{
+    width: 100px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 5%;
+    margin: 8px 0;
+}

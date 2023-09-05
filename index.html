@@ -4,34 +4,41 @@
         <meta charset="utf-8">
         <title>Trabalho Computacao Grafica</title>
         <script type="module" src="/main.js"></script>
+        <link href="estilos/estilo.css" rel="stylesheet" />
         <style>
             body{margin:0;}
         </style>
     </head>
-    <body>
+    <body id="transformacoes">
         <div>
-            <input type="text" id="geometry" name="geometry" placeholder="Escreva o Formato Geométrico" />
+            <label> Transformações disponíveis 3D: </label>
         </div>
-        <div>
-            <label> Formatos disponíveis: </label>
-        </div>
-        <div>
-            <label> Cube </label>
-        </div>
-        <div>
-            <label> Capsule </label>
-        </div>
-        <div>
-            <label> Esfera </label>
-        </div>
-        <div>
-            <label> Linha basica </label>
-        </div>
-        <div>
-            <label> Meshdepth </label>
+        <ul>
+            <div>
+                <label>| Cubo |</label>
+                <label>Capsula |</label>
+                <label> Esfera |</label>
+            </div>
+        </ul>
+        <ul>
+            <div>
+                <label>| Linha Basica |</label>
+                <label> Mesh Depth |</label>
+                <label> Load Textura |</label>
+            </div>
+        </ul>
+        <div >
+            <input type="text" id="geometry" name="geometry" placeholder="Escreva a transformação que deseja" />
         </div>
         <div>
             <input id="btn" type="button" value="Mudar">
         </div>
+        <script>
+            document.addEventListener('keypress', function(e){
+                if(e.which == 13){
+                    btn.click();
+                }
+            }, false);
+        </script>
     </body>
 </html>
